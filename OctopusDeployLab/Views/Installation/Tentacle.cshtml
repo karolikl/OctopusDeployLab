@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Exercise 2";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Installing an Octopus Deploy Tentacle</h2>
+        <p>
+            In this exercise, you'll be installing an Octopus Deploy Tentacle <b>on your laptop</b>.
+        </p>
+        <ul>
+            <li>
+                <h3>2.1 Download</h3>
+                Go to <a target="_blank" href="http://octopusdeploy.com/downloads">the Octopus Deploy download page</a> and download either the 32-bit or the 64-bit installer for the <b>Octopus Tentacle</b>.
+            </li>
+            <li>
+                <h3>2.2 Run the installer</h3>
+                Follow the installation wizard, referring to the links in the information box if needed. Do not configure your Tentacle yet, we will do that in a little bit. 
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>For more information on installing the Octopus Tentacle, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Installing+Tentacles">Octopus Deploy documentation</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Let's begin!", "One", "Exercise", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

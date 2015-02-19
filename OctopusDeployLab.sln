@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctopusDeployLab", "OctopusDeployLab\OctopusDeployLab.csproj", "{A9208B19-5F5D-47E3-B9EC-2FBD24FDC081}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{2F15BA5C-0F27-4CF3-B66A-7348923CCF7C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{BD420E28-11E1-4CE3-B08A-90D985034C01}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\OctopusDeployLab-WAWS-dev.json = PublishScripts\Configurations\OctopusDeployLab-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9208B19-5F5D-47E3-B9EC-2FBD24FDC081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9208B19-5F5D-47E3-B9EC-2FBD24FDC081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9208B19-5F5D-47E3-B9EC-2FBD24FDC081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9208B19-5F5D-47E3-B9EC-2FBD24FDC081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD420E28-11E1-4CE3-B08A-90D985034C01} = {2F15BA5C-0F27-4CF3-B66A-7348923CCF7C}
+	EndGlobalSection
+EndGlobal

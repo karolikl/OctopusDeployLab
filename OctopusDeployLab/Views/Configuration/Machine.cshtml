@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Exercise 4";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Add a machine to the test environment</h2>
+        <p>
+            In this exercise, you'll be adding a machine to the test environment
+        </p>
+        <ul>
+            <li>
+                <h3>4.1 Add machine</h3>
+                Add a machine to the test environment by specifying localhost as the hostname and the port you used to configure your Tentacle (default port 10933).
+            </li>
+        </ul>
+        <h2>
+            "Extra credit":
+        </h2>
+        <ul>
+            <li>
+                <h3>4.2 Run a health check</h3>
+                Run a health check to ensure that your Octopus Server is able to connect with the Tentacle you've set up
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>For more information on creating machines, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Environments">Octopus Deploy documentation</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Next up, creating a project!", "Tentacle", "Installation", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

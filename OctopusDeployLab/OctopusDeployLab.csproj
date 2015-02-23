@@ -158,6 +158,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ConfigurationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstallationController.cs" />
     <Compile Include="Global.asax.cs">
@@ -211,6 +212,8 @@
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Installation\Server.cshtml" />
     <Content Include="Views\Installation\Tentacle.cshtml" />
+    <Content Include="Views\Configuration\Environments.cshtml" />
+    <Content Include="Views\Configuration\Machine.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

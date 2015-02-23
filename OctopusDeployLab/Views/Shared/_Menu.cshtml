@@ -16,6 +16,7 @@
                         <li><a href="http://octopusdeploy.com/" target="_blank">octopusdeploy.com</a></li>
                         <li><a href="http://docs.octopusdeploy.com/display/OD/Home" target="_blank">The Octopus Deploy documentation</a></li>
                         <li><a href="http://octopusdeploy.com/learn/videos" target="_blank">Training videos</a></li>
+                        <li><a href="https://demo.octopusdeploy.com/" target="_blank">The Octopus Demo site</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -25,7 +26,13 @@
                             @Html.ActionLink("1. Install server", "Server", "Installation")
                         </li>
                         <li>
-                            @Html.ActionLink("2. Install tentacle", "Tentacle", "Installation")
+                            @Html.ActionLink("2. Setup environments", "Environments", "Configuration")
+                        </li>
+                        <li>
+                            @Html.ActionLink("3. Install tentacle", "Tentacle", "Installation")
+                        </li>
+                        <li>
+                            @Html.ActionLink("4. Add machine", "Machine", "Configuration")
                         </li>
                     </ul>
                 </li>

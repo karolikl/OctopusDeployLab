@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Exercise 2";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Setting up your environments</h2>
+        <p>
+            In this exercise, you'll be configuring your environments.
+        </p>
+        <ul>
+            <li>
+                <h3>2.1 Review the case study</h3>
+                Review the @Html.ActionLink("case study", "Index", "Case") for this lab.
+            </li>
+            <li>
+                <h3>2.2 Setup environments</h3>
+                Setup the environments required by the case study in your Octopus Web Portal. 
+            </li>
+        </ul>
+        <h2>
+            "Extra credit":
+        </h2>
+        <ul>
+            <li>
+                <h3>2.3 Reorder your environments</h3>
+                Figure out how to reorder your environments
+            </li>
+            <li>
+                <h3>2.4 Guided failure mode</h3>
+                How should "Guided failure mode" be configured for the environments you have set up?
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>For more information on Environments, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Environments">Octopus Deploy documentation</a></p></li>
+                    <li><p>Check out the <a target="_blank" href="http://fast.wistia.net/embed/iframe/psanqpbi21?popover=true">training video</a> on how to create environments</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("It's time to install a tentacle!", "Tentacle", "Installation", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

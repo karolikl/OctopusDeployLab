@@ -2,14 +2,14 @@
 
 namespace OctopusDeployLab.Controllers
 {
-    public class InstallationController : Controller
+    public class ConfigurationController : Controller
     {
-        public new ActionResult Server()
+        public ActionResult Environments()
         {
             return View();
         }
 
-        public ActionResult Tentacle()
+        public ActionResult Machine()
         {
             return View();
         }

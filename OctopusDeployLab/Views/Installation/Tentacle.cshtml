@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Exercise 2";
+    ViewBag.Title = "Exercise 3";
 }
 @section featured {
     <div class="page-header" id="banner">
@@ -19,12 +19,16 @@
         </p>
         <ul>
             <li>
-                <h3>2.1 Download</h3>
+                <h3>3.1 Download</h3>
                 Go to <a target="_blank" href="http://octopusdeploy.com/downloads">the Octopus Deploy download page</a> and download either the 32-bit or the 64-bit installer for the <b>Octopus Tentacle</b>.
             </li>
             <li>
-                <h3>2.2 Run the installer</h3>
-                Follow the installation wizard, referring to the links in the information box if needed. Do not configure your Tentacle yet, we will do that in a little bit. 
+                <h3>3.2 Run the installer</h3>
+                Follow the installation wizard, referring to the links in the information box if needed. Do not configure your Tentacle yet, we will do that in a little bit.
+            </li>
+            <li>
+                <h3>3.3 Configure the Tentacle</h3>
+                Configure the tentacle to work as a listening tentacle. You can find your Octopus Thumbprint by creating a new Machine in the Octopus Web Portal.
             </li>
         </ul>
     </div>
@@ -36,6 +40,7 @@
             <div class="panel-body">
                 <ul>
                     <li><p>For more information on installing the Octopus Tentacle, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Installing+Tentacles">Octopus Deploy documentation</a></p></li>
+                    <li><p>Not sure what the difference between a listening and a polling tentacle is? Check out the <a target="_blank" href="http://octopusdeploy.com/learn/videos">training videos</a> for more information.</p></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +50,7 @@
         <div class="col-lg-12">
             <div>
                 <p>
-                    @Html.ActionLink("Let's begin!", "One", "Exercise", null, new { @class = "btn btn-primary right" })
+                    @Html.ActionLink("Let's add a machine", "Machine", "Configuration", null, new { @class = "btn btn-primary right" })
                 </p>
             </div>
         </div>

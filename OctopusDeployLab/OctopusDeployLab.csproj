@@ -179,6 +179,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\OctoFX.SmokeTests.2.9.3030.nupkg" />
     <None Include="Properties\PublishProfiles\OctopusDeployLab.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -214,6 +215,8 @@
     <Content Include="Views\Installation\Tentacle.cshtml" />
     <Content Include="Views\Configuration\Environments.cshtml" />
     <Content Include="Views\Configuration\Machine.cshtml" />
+    <Content Include="Views\Configuration\Project.cshtml" />
+    <Content Include="Views\Configuration\Package.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

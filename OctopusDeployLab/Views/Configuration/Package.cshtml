@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Exercise 6";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Uploading a package</h2>
+        <p>
+            In this exercise, you'll be uploading a NuGet package to the built-in Octopus NuGet feed. 
+        </p>
+        <ul>
+            <li>
+                <h3>6.1 Download package</h3>
+                Download <a href="~/Content/OctoFX.SmokeTests.2.9.3030.nupkg">this NuGet package</a> to your laptop. It contains this OctopusDeployLab website.
+            </li>
+            <li>
+                <h3>6.2 Upload package to Octopus Web Portal</h3>
+                Upload the NuGet package to the built-in Octopus package repository in your Octopus Web Portal
+            </li>
+            <li>
+                <h3>6.3 Set the repository retention</h3>
+                If a package is not associated with any release, it can be deleted automatically from the repository after a certain amount of time. Set the package repository retention to 7 days. 
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>If you want to read about the built-in repository in Octopus, the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Package+repositories">package repositories documentation</a> gives a clear overview of the available possibilities.</p></li>
+                    <li><p>For more information on packaging applications, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Packaging+applications">Octopus Deploy documentation</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Now, let's upload a package!", "Package", "Configuration", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

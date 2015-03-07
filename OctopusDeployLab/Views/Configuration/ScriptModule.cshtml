@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Exercise 10";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Create a script module</h2>
+        <p>
+            In this exercise, you'll be creating a script module and making the necessary changes to your project in order to use the script module.
+        </p>
+        <ul>
+            <li>
+                <h3>10.1 Create a script module</h3>
+                Recreate the "Adding server to load" step in your project deployment process as a script module. Reference the script module in your project and call this from your deployment step.
+            </li>
+        </ul> <br /><br />
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>For more information on script modules, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Script+Modules">Octopus Deploy documentation</a>.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Last exercise, creating a variable set!", "VariableSet", "Configuration", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

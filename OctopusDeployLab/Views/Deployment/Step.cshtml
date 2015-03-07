@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Exercise 7";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>
+            Defining your deployment process
+        </h2>
+        <p>
+            In this exercise, you'll be adding deployment steps to your project and creating your first release. 
+        </p>
+        <ul>
+            <li>
+                <h3>7.1 Create a deployment step</h3>
+                Add a deployment step to the project you've created in Octopus Deploy. The step should deploy the NuGet package we uploaded in the previous exercise.
+            </li>
+            <li>
+                <h3>7.2 Create a release</h3>
+                Create a new release and deploy it to the test environment. Was the deployment successful? If not, do the necessary configuration changes to make the deployment successful. 
+            </li>
+            <li>
+                <h3>7.3 Removing server from load</h3>
+                Create a deployment step where you fake removing the server from a load balancer. The step should be a PowerShell script outputting the text 'Removing from load balancer' and sleeping for 10 seconds. This step should run before the step created in exercise 7.1 and it should be configured as a rolling deployment.
+            </li>
+            <li>
+                <h3>7.4 Adding server from load</h3>
+                Repeat exercise 7.3, but this time you will fake adding the server back by outputting the text 'Adding to load balancer' and sleeping for 10 seconds.
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>If you want to read more about the deployment process, take a look at <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Deploying+applications">deploying applications</a> in the Octopus documentation.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Next up: Configuring a lifecycle", "Lifecycle", "Configuration", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

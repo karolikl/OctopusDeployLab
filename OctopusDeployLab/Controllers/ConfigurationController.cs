@@ -23,5 +23,25 @@ namespace OctopusDeployLab.Controllers
         {
             return View();
         }
+
+        public ActionResult Lifecycle()
+        {
+            return View();
+        }
+
+        public ActionResult StepTemplate()
+        {
+            return View();
+        }
+
+        public ActionResult ScriptModule()
+        {
+            return View();
+        }
+
+        public ActionResult VariableSet()
+        {
+            return View();
+        }
     }
 }

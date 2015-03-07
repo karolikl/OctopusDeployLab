@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Exercise 9";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>
+            Create a step template
+        </h2>
+        <p>
+            In this exercise, you will create your own step template and also import one of the readymade templates from the Octopus library.
+        </p>
+        <ul>
+            <li>
+                <h3>9.1 Create a step template</h3>
+                Recreate the "Removing server from load balancer" step in your project deployment process as a step template and use the template instead.
+            </li>
+            <li>
+                <h3>9.2 Import a step template</h3>
+                Check out the <a href="http://library.octopusdeploy.com/#!/listing" target="_blank">Octopus template library</a>, choose a template and import it to your Octopus Web Portal.
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>If you want to read more about step templates, take a look at the Step Template section in <a target="_blank" href="http://octopusdeploy.com/blog/2.4">this blog post.</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Next up: Creating a script module", "ScriptModule", "Configuration", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

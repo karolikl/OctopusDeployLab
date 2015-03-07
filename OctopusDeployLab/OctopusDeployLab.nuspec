@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>OctopusDeployLab</id>
+    <title>OctopusDeployLab</title>
+    <version>1.0.0</version>
+    <authors>Karoline Klever</authors>
+    <owners>Karoline Klever</owners>
+    <description>Lab for learning the basic concepts of Octopus Deploy</description>
+  </metadata>
+</package>

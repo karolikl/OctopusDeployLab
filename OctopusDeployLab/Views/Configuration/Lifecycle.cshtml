@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Exercise 8";
+}
+@section featured {
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>@ViewBag.Title</h1>
+                <p class="lead">@ViewBag.Message</p>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="col-lg-8">
+        <h2>Configuring a lifecycle</h2>
+        <p>
+            In this exercise, you'll be configuring the lifecycle for your project
+        </p>
+        <ul>
+            <li>
+                <h3>8.1 Create the following lifecycle for your project</h3>
+                You should not be allowed to deploy the project to Production before Acceptance, and you should not be allowed to deploy to Acceptance before Test.
+            </li>
+            <li>
+                <h3>8.2 Setup an automatic deploy</h3>
+                Alter the lifecycle from exercise 8.1 so that a deployment to Test is done automatically when a release is created.
+            </li>
+            <li>
+                <h3>8.3 Defining retention policies</h3>
+                Configure the Test environment to only keep releases for 1 day, while Acceptance and Production should be configured to keep up to 3 releases. 
+            </li>
+        </ul> <br /><br />
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">The information box</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><p>For more information on lifecycles, take a look at the <a target="_blank" href="http://docs.octopusdeploy.com/display/OD/Lifecycles">Octopus Deploy documentation</a> or the <a href="http://octopusdeploy.com/blog/lifecycles-rfc" target="_blank">RFC</a></p></li>
+                    <li><p>If you want to read up on retention policies, <a target="_blank" href="http://docs.octopusdeploy.com/pages/viewpage.action?pageId=1901486">this is the place to go</a>.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <p>
+                    @Html.ActionLink("Now, let's create a step template!", "StepTemplate", "Configuration", null, new { @class = "btn btn-primary right" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
